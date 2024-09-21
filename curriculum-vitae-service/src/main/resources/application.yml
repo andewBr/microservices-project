@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cv_db
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: curriculum-vitae-service
+
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+

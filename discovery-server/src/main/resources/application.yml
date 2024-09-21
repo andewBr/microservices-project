@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false   # Eureka сервер не должен сам регистрироваться в себе
+    fetch-registry: false         # Он не должен пытаться получить другие сервисы
+  server:
+    enable-self-preservation: false  # Отключить самосохранение для тестирования
